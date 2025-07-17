@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int v = sc.nextInt();
+        int w = sc.nextInt();
+        if(w%2==0){
+            int fw = (w/2)-v;
+            int tw = v-fw;
+            System.out.println("two wheelers : "+tw);
+            System.out.println("four wheelers : "+fw);
+        }else{
+            System.out.println("invalid input");
+        }
+    }
+}
